@@ -1,0 +1,23 @@
+{
+  "name": "gemma-code",
+  "version": "0.1.0",
+  "description": "CLI agent harness for Gemma 4 via Ollama",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "gemma-code": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "glob": "^10.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
